@@ -18,7 +18,7 @@ export default function Home() {
     
     useEffect( () => {
         getPokemons().catch(null);
-    }, []);
+    }, [getPokemons]);
 
     if(isLoading) {
         return <Loading title="Cargando resultados..."/>;

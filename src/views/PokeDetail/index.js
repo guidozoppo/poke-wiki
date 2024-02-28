@@ -23,7 +23,7 @@ export default function PokeDetail(){
          * Cada vez que se cargue la pantalla o cada vez que cambie el id hay que solicitar el detalle del pokemon
          */
         getPokemonDetail(id).catch(null);
-    }, [])
+    }, [getPokemonDetail, id])
     
     if(isLoading) {
         return <Loading title="Cargando Pokemon..."/>;
@@ -36,7 +36,6 @@ export default function PokeDetail(){
                     <p>{`Name: ${pokemonDetail?.name}`}</p>
                     <p>{`Peso: ${pokemonDetail?.weight} kgs.`}</p>
                     <p>{`Altura: ${pokemonDetail?.height} cm.`}</p>
-                    <img src={pokemonDetail?.sprites.front_default} alt=""/>
                     <div>
                         <h3 style={{ marginTop:30, marginBottom: 15}}>Habilidades</h3>
                         <PokeStats stats={pokemonDetail?.stats ?? []}/>
