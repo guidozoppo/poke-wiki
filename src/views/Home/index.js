@@ -1,5 +1,5 @@
 import { useEffect } from "react"; 
-//import PokemonContext from "../../context/pokemons";
+//import PokemonContext from "../../context/pokemons"; con context
 import PokemonList from "./components/PokemonList";
 import Loading from "../../components/Loading";
 import ErrorMessage from "../../components/ErrorMessage";
