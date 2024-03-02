@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function PokeStats( {stats, color} ) {
     return (
         <div className="flex flex-wrap gap-2 justify-center">
