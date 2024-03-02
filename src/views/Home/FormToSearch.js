@@ -24,8 +24,8 @@ export default function FormToSearch({ changeSortOrder, searchByName }) {
                     <button className="border border-black rounded p-1">Buscar</button>
                 </div>
                 <div>
-                    <label>Ordenar</label>
-                    <select onChange={handleChangeSortOrder}>
+                    <label className="m-2">Ordenar</label>
+                    <select onChange={handleChangeSortOrder} className="text-black">
                         <option value="a-z">A-Z</option>
                         <option value="z-a">Z-A</option>
                     </select>

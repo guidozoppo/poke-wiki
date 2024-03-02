@@ -3,7 +3,7 @@ import PokemonResults from "./PokemonResults"
 
 export default function Home() {
     return (
-        <div className="flex-wrap">
+        <div className="text-white font-bold">
             <Header />
             <PokemonResults />
         </div>
